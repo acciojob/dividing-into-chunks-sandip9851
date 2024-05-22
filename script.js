@@ -1,5 +1,3 @@
-
-
 const divide = (arr, n) => {
     let result = [];
     let currentSubarray = [];
@@ -28,5 +26,13 @@ const divide = (arr, n) => {
 };
 
 
-const n = prompt("Enter n: ");
-alert(JSON.stringify(divide(arr, n)));
+const arr = [1, 2, 3, 4, 1, 0, 2, 2];
+
+
+const n = parseInt(prompt("Enter n: "), 10);
+
+
+const result = divide(arr, n);
+
+
+alert(JSON.stringify(result));
